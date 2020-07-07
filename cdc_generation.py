@@ -27,7 +27,6 @@ def run(project, topic):
         id += 1
         simple_profile = json.dumps(simple_profile, default=str)
         pubsub.publish(project, topic, data=simple_profile.encode('utf-8'))
-        logging.info(json.dumps(simple_profile))
 
 
 if __name__ == '__main__':
