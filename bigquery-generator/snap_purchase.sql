@@ -8,4 +8,4 @@ SELECT
 FROM `{PROJECT}.{DATASET}.purchase`)
 SELECT
   * EXCEPT (id_rank)
-FROM purchase_snapshot WHERE (id_rank = 1 AND operation_type <> 'DELETE')
+FROM purchase_snapshot WHERE (id_rank = 1 AND operation_type <> 'DELETE') ORDER BY id

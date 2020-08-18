@@ -8,4 +8,4 @@ SELECT
 FROM `{PROJECT}.{DATASET}.profile`)
 SELECT
   * EXCEPT (id_rank)
-FROM profile_snapshot WHERE (id_rank = 1 AND operation_type <> 'DELETE')
+FROM profile_snapshot WHERE (id_rank = 1 AND operation_type <> 'DELETE') ORDER BY id
