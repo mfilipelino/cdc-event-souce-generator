@@ -1,5 +1,5 @@
-from google.cloud import pubsub_v1
 from google.api_core.exceptions import NotFound
+from google.cloud import pubsub_v1
 
 publish_client = pubsub_v1.PublisherClient()
 
