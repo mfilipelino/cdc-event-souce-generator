@@ -3,8 +3,8 @@ import logging
 
 from faker import Faker
 
-import pubsub
-from settings import GOOGLE_PROJECT_ID, PUBSUB_TOPIC
+import kinesis
+from settings import KINESIS_STREAM_NAME
 
 logging.basicConfig(
     level=logging.INFO,
